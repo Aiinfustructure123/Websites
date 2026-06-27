@@ -41,8 +41,9 @@ export function Treatments() {
           {site.journey.subtitle}
         </LineReveal>
         <p className="mt-4 max-w-xl text-ink/65">
-          Hover each treatment to explore realistic outcomes. Every plan begins
-          with a free consultation — nothing is committed on the day.
+          Hover each treatment to compare real before and after faces. Drag the
+          slider to explore typical outcomes. Every plan begins with a free
+          consultation — nothing is committed on the day.
         </p>
 
         {/* Desktop: interactive list + preview */}

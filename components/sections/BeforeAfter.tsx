@@ -66,11 +66,11 @@ export function BeforeAfter() {
           id="results-heading"
           className="mt-4 font-display text-display-lg text-ink"
         >
-          Subtle change, considered carefully
+          See the difference on a real face
         </h2>
         <p className="mt-4 max-w-xl text-ink/65">
-          Drag to compare. We never promise outcomes — only thoughtful,
-          consultation-led care.
+          Drag to compare before and after. Every image is shown with consent
+          and labelled honestly — individual results always vary.
         </p>
 
         <motion.div
@@ -97,9 +97,9 @@ export function BeforeAfter() {
           {/* After (full) */}
           <Image
             src={assets.images.beforeAfter.after}
-            alt="After treatment — illustrative placeholder"
+            alt="After treatment — anonymous client, illustrative placeholder"
             fill
-            className="object-cover"
+            className="object-cover object-[center_20%]"
             sizes="(max-width: 768px) 100vw, 80vw"
           />
 
@@ -110,9 +110,9 @@ export function BeforeAfter() {
           >
             <Image
               src={assets.images.beforeAfter.before}
-              alt="Before treatment — illustrative placeholder"
+              alt="Before treatment — anonymous client, illustrative placeholder"
               fill
-              className="object-cover"
+              className="object-cover object-[center_20%]"
               sizes="(max-width: 768px) 100vw, 80vw"
             />
           </div>

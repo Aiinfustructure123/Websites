@@ -16,24 +16,21 @@ All media is replaceable. Swap files in `public/` and update paths in `content/a
 
 ---
 
-## Treatments (interactive preview — priority for realism)
+## Treatments (interactive before/after — priority for realism)
 
-Each core treatment has a **poster image** and a **slow-motion video loop** shown on hover (desktop) or expand (mobile).
+Each core treatment has a **before** and **after** face photograph. Visitors drag a slider on hover (desktop) or expand (mobile) to compare.
 
-| File | Treatment | Dimensions | Shoot brief |
-|------|-----------|------------|-------------|
-| `public/images/treatment-anti-wrinkle.jpg` | Anti-Wrinkle Injections | 1920×1080, 4:3 crop | Natural expression at rest; soft forehead/crow's feet area. Editorial, not clinical. Anonymous model, consent on file. |
-| `public/video/treatment-anti-wrinkle.mp4` | Anti-Wrinkle (hover video) | 1920×1080, 5s loop | Slow Ken Burns or macro: skin at rest, natural light, subtle movement. |
-| `public/images/treatment-dermal-fillers.jpg` | Dermal Fillers | 1920×1080 | Profile or 3/4 view showing balanced cheek/jaw proportion. Undetectable, natural result. |
-| `public/video/treatment-dermal-fillers.mp4` | Dermal Fillers (hover video) | 1920×1080, 5s loop | Slow pan across mid-face structure. Warm clinic lighting. |
-| `public/images/treatment-microneedling.jpg` | Microneedling | 1920×1080 | Close-up: clear, refined skin texture. Dewy post-treatment glow (not raw/red). |
-| `public/video/treatment-microneedling.mp4` | Microneedling (hover video) | 1920×1080, 5s loop | Macro skin texture, light catching pores evenly. Suggests clarity without promising results. |
-| `public/images/treatment-skin-boosters.jpg` | Skin Boosters & Mesotherapy | 1920×1080 | Hydrated, luminous skin — cheekbone highlight, golden hour. "Dewy" not oily. |
-| `public/video/treatment-skin-boosters.mp4` | Skin Boosters (hover video) | 1920×1080, 5s loop | Slow light sweep across hydrated skin surface. |
-| `public/images/treatment-chemical-peels.jpg` | Chemical Peels | 1920×1080 | Even skin tone, soft clarity. No harsh peel recovery imagery. |
-| `public/video/treatment-chemical-peels.mp4` | Chemical Peels (hover video) | 1920×1080, 5s loop | Gentle texture reveal, warm tone. |
+| Before file | After file | Treatment | Shoot brief |
+|-------------|------------|-----------|-------------|
+| `treatment-anti-wrinkle-before.jpg` | `treatment-anti-wrinkle.jpg` | Anti-Wrinkle | Same client, same angle/lighting. Before: natural expression lines visible. After: smooth, natural movement preserved. |
+| `treatment-dermal-fillers-before.jpg` | `treatment-dermal-fillers.jpg` | Dermal Fillers | Profile or 3/4. Before: volume loss. After: subtle, balanced restoration. |
+| `treatment-microneedling-before.jpg` | `treatment-microneedling.jpg` | Microneedling | Front-facing close-up. Before: uneven texture. After: clear, refined skin. |
+| `treatment-skin-boosters-before.jpg` | `treatment-skin-boosters.jpg` | Skin Boosters | Before: dull/dehydrated. After: dewy luminosity. |
+| `treatment-chemical-peels-before.jpg` | `treatment-chemical-peels.jpg` | Chemical Peels | Before: uneven tone. After: even, renewed clarity. |
 
-**Label in UI:** Every preview shows *"Illustrative only · Individual results vary"* — keep this when swapping to real media.
+**Current placeholders:** Stock face photography with processed "before" variants. **Replace with paired photos of the same consented, anonymised client** before launch.
+
+**Label in UI:** *"Anonymous model · Illustrative only · Individual results vary"*
 
 ---
 

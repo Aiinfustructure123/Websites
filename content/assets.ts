@@ -1,6 +1,9 @@
 /**
  * Central asset map — swap placeholder files here when final media is ready.
  * See ASSETS.md for full slot documentation.
+ *
+ * Treatment before/after pairs use stock face photography.
+ * Replace with consented, anonymised client photos before launch.
  */
 
 export const assets = {
@@ -15,27 +18,33 @@ export const assets = {
       webm: "/video/cta-placeholder.webm",
       poster: "/images/cta-poster.jpg",
     },
-    treatments: {
-      "anti-wrinkle": {
-        mp4: "/video/treatment-anti-wrinkle.mp4",
-        poster: "/images/treatment-anti-wrinkle.jpg",
-      },
-      "dermal-fillers": {
-        mp4: "/video/treatment-dermal-fillers.mp4",
-        poster: "/images/treatment-dermal-fillers.jpg",
-      },
-      microneedling: {
-        mp4: "/video/treatment-microneedling.mp4",
-        poster: "/images/treatment-microneedling.jpg",
-      },
-      "skin-boosters": {
-        mp4: "/video/treatment-skin-boosters.mp4",
-        poster: "/images/treatment-skin-boosters.jpg",
-      },
-      "chemical-peels": {
-        mp4: "/video/treatment-chemical-peels.mp4",
-        poster: "/images/treatment-chemical-peels.jpg",
-      },
+  },
+
+  treatments: {
+    "anti-wrinkle": {
+      before: "/images/treatment-anti-wrinkle-before.jpg",
+      after: "/images/treatment-anti-wrinkle.jpg",
+      alt: "Anti-wrinkle treatment — face before and after illustrative comparison",
+    },
+    "dermal-fillers": {
+      before: "/images/treatment-dermal-fillers-before.jpg",
+      after: "/images/treatment-dermal-fillers.jpg",
+      alt: "Dermal filler treatment — face before and after illustrative comparison",
+    },
+    microneedling: {
+      before: "/images/treatment-microneedling-before.jpg",
+      after: "/images/treatment-microneedling.jpg",
+      alt: "Microneedling — face before and after illustrative comparison",
+    },
+    "skin-boosters": {
+      before: "/images/treatment-skin-boosters-before.jpg",
+      after: "/images/treatment-skin-boosters.jpg",
+      alt: "Skin boosters — face before and after illustrative comparison",
+    },
+    "chemical-peels": {
+      before: "/images/treatment-chemical-peels-before.jpg",
+      after: "/images/treatment-chemical-peels.jpg",
+      alt: "Chemical peel — face before and after illustrative comparison",
     },
   },
 
@@ -56,4 +65,4 @@ export const assets = {
 } as const;
 
 export type AssetKey = keyof typeof assets;
-export type TreatmentMediaKey = keyof typeof assets.video.treatments;
+export type TreatmentMediaKey = keyof typeof assets.treatments;

@@ -28,7 +28,7 @@ export function PageIntro() {
 
   useEffect(() => {
     if (!show) return;
-    const timer = setTimeout(dismiss, 1200);
+    const timer = setTimeout(dismiss, 900);
     return () => clearTimeout(timer);
   }, [show, dismiss]);
 

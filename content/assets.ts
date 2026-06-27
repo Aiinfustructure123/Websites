@@ -56,3 +56,4 @@ export const assets = {
 } as const;
 
 export type AssetKey = keyof typeof assets;
+export type TreatmentMediaKey = keyof typeof assets.video.treatments;

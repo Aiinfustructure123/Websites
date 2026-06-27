@@ -8,6 +8,7 @@ interface LineRevealProps {
   className?: string;
   delay?: number;
   as?: "h1" | "h2" | "h3" | "p" | "span";
+  id?: string;
 }
 
 export function LineReveal({
@@ -15,16 +16,21 @@ export function LineReveal({
   className = "",
   delay = 0,
   as: Tag = "p",
+  id,
 }: LineRevealProps) {
   const { reducedMotion } = useMotion();
   const lines = children.split("\n");
 
   if (reducedMotion) {
-    return <Tag className={className}>{children}</Tag>;
+    return (
+      <Tag className={className} id={id}>
+        {children}
+      </Tag>
+    );
   }
 
   return (
-    <Tag className={className} aria-label={children}>
+    <Tag className={className} id={id} aria-label={children}>
       {lines.map((line, i) => (
         <span key={i} className="text-mask-line block">
           <motion.span

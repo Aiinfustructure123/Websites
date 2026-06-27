@@ -45,11 +45,11 @@ export function Navigation() {
         >
           <Link
             href="/"
-            className="relative z-10 font-display text-lg tracking-tight text-ink md:text-xl"
+            className="relative z-10 font-display text-base tracking-tight text-ink md:text-lg"
             onClick={() => handleNavClick("logo")}
           >
-            TFC
-            <span className="sr-only"> — {site.name}</span>
+            <span className="hidden sm:inline">The Facial Collective</span>
+            <span className="sm:hidden">TFC</span>
           </Link>
 
           <ul className="hidden items-center gap-8 lg:flex">

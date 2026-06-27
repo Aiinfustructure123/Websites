@@ -6,6 +6,7 @@ export interface Treatment {
   priceLabel: string;
   notes?: string;
   description: string;
+  visualOutcome: string;
 }
 
 export interface JourneyStep {
@@ -176,6 +177,7 @@ export const site = {
       notes: "30 min",
       description:
         "An unhurried conversation to understand your history, hopes, and hesitations. No pressure to begin.",
+      visualOutcome: "A clear plan, on your terms",
     },
     {
       id: "anti-wrinkle",
@@ -186,6 +188,7 @@ export const site = {
       notes: "One Area £140 · Two Areas £180 · Three Areas £220 · Masseter/Jaw Slimming £250 · +more on Booksy",
       description:
         "Precise, natural movement preservation. Each area considered within the context of your whole face.",
+      visualOutcome: "Smooth expression, natural movement",
     },
     {
       id: "dermal-fillers",
@@ -196,6 +199,7 @@ export const site = {
       notes: "9 treatments on Booksy",
       description:
         "Restoration and refinement, never overfilling. Structural support with an undetectable finish.",
+      visualOutcome: "Balanced proportions, subtle volume",
     },
     {
       id: "microneedling",
@@ -206,6 +210,7 @@ export const site = {
       notes: "4 treatments",
       description:
         "Collagen induction for texture, tone, and luminosity. A considered approach to skin quality.",
+      visualOutcome: "Clear, refined skin texture",
     },
     {
       id: "skin-boosters",
@@ -216,6 +221,7 @@ export const site = {
       notes: "6 treatments",
       description:
         "Deep hydration and nourishment for dewy, healthy-looking skin from within.",
+      visualOutcome: "Dewy, hydrated luminosity",
     },
     {
       id: "chemical-peels",
@@ -226,6 +232,7 @@ export const site = {
       notes: "3 treatments",
       description:
         "Controlled resurfacing tailored to your skin type and concerns.",
+      visualOutcome: "Even tone, renewed clarity",
     },
     {
       id: "vitamin-injections",
@@ -236,6 +243,7 @@ export const site = {
       notes: "15 min",
       description:
         "Targeted vitamin delivery for skin vitality and overall wellness.",
+      visualOutcome: "Revitalised, healthy-looking skin",
     },
   ] as Treatment[],
 

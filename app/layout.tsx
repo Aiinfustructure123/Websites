@@ -7,6 +7,8 @@ import { CustomCursor } from "@/components/ui/CustomCursor";
 import { PageIntro } from "@/components/ui/PageIntro";
 import { Navigation } from "@/components/Navigation";
 import { site } from "@/content/site";
+import { getLocalBusinessSchema } from "@/lib/schema";
+import { assets } from "@/content/assets";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -37,6 +39,7 @@ export const metadata: Metadata = {
     siteName: site.name,
     locale: "en_GB",
     type: "website",
+    images: [{ url: assets.images.og, width: 1920, height: 1080 }],
   },
   twitter: {
     card: "summary_large_image",
@@ -55,7 +58,13 @@ export default function RootLayout({
       lang="en-GB"
       className={`${fraunces.variable} ${inter.variable} ${spaceGrotesk.variable}`}
     >
-      <body>
+      <body className="pb-20 md:pb-0">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(getLocalBusinessSchema()),
+          }}
+        />
         <MotionProvider>
           <SmoothScroll>
             <CustomCursor />

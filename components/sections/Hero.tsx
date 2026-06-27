@@ -83,7 +83,7 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-tr from-blush/20 via-transparent to-amber/10" />
       </motion.div>
 
-      <GradientMesh animated />
+      <GradientMesh animated className="opacity-70" />
 
       {/* Content */}
       <motion.div
